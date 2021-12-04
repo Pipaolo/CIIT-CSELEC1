@@ -162,9 +162,6 @@ const renderItem = (item) => {
     </button>
   </li>
     `;
-
-
-
 };
 
 $(function () {
@@ -177,7 +174,6 @@ $(function () {
         $(`#item-${item.id} > button`).on('click', () => onAddToCartPressed(item));
     });
     updateCart();
-
 });
 
 

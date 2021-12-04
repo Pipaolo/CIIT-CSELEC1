@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hawkeye</title>
+    <!-- Import JQuery 3.6.0 -->
+    <script src="dist/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/tailwind.css" />
+  </head>
+  <body class="flex flex-col w-full bg-darkBlue font-spartan">
+    <section
+      id="banner"
+      class="relative grid w-full h-screen grid-cols-3 pt-8 pb-8 pl-8 pr-24 overflow-hidden "
+    >
+      <!-- Arrows -->
+      <img
+        src="assets/icons/stacked-arrows.svg"
+        alt=""
+        class="absolute arrow arrow-down"
+      />
+      <img
+        src="assets/icons/stacked-arrows.svg"
+        alt=""
+        class="absolute transform rotate-180 arrow arrow-up"
+      />
+      <!-- Banner Text Content -->
+      <div class="flex flex-col justify-end pb-48 space-y-4">
+        <div class="flex font-bold text-darkPurple text-7xl">
+          WELC
+          <div
+            id="welcome-o"
+            class="relative flex items-center justify-center flex-none overflow-visible rounded-full  bg-dartViolet"
+          >
+            <div class="w-2 h-2 bg-white rounded-full"></div>
+            <div
+              class="absolute transition duration-1000 transform scale-0 rounded-full  circle-ring"
+              id="ring-1"
+            ></div>
+            <div
+              class="absolute transition duration-1000 transform scale-0 rounded-full  circle-ring"
+              id="ring-2"
+            ></div>
+            <div
+              class="absolute transition duration-1000 transform scale-0 rounded-full  circle-ring"
+              id="ring-3"
+            ></div>
+          </div>
+          ME
+        </div>
+        <div class="flex flex-col space-y-4">
+          <blockquote class="text-white font-dorsis">
+            "Okay, look, the city is flying, we're fighting an army of robots...
+            and I have a bow and arrow. None of this makes sense. But I'm going
+            back out there because it's my job."
+          </blockquote>
+          <span class="text-right text-white"> ―Hawkeye </span>
+        </div>
+      </div>
+      <!-- Banner Image -->
+      <img
+        id="hawkeye-image"
+        class="overflow-visible transition duration-1000 transform scale-0"
+        style="z-index: -1"
+        src="assets/images/hawkeye.png"
+        alt="Hawkeye"
+      />
+      <!-- Banner Navigations -->
+      <div class="flex flex-col items-end space-y-4">
+        <a class="text-3xl font-bold text-darkPurple" href="#facts">FACTS</a>
+        <a class="text-3xl font-bold nav-item text-darkPurple" href="#weapons"
+          >WEAPONS</a
+        >
+        <a class="text-3xl font-bold nav-item text-darkPurple" href="#biography"
+          >BIOGRAPHY</a
+        >
+        <a class="text-3xl font-bold nav-item text-darkPurple" href="#backstory"
+          >BACKSTORY</a
+        >
+      </div>
+    </section>
+    <section
+      id="facts"
+      class="relative flex flex-col w-full h-screen p-8 overflow-hidden"
+    >
+      <img
+        src="assets/icons/stacked-arrows.svg"
+        alt=""
+        class="absolute arrow arrow-down"
+      />
+      <img
+        src="assets/icons/stacked-arrows.svg"
+        alt=""
+        class="absolute transform rotate-180 arrow arrow-up"
+      />
+      <h3 class="text-5xl font-bold font-spartan text-darkPurple">FACTS</h3>
+
+      <div
+        class="z-10 flex flex-col items-center justify-center flex-1 p-4 bg-opacity-50 rounded-lg  bg-darkPurple"
+      >
+        <p class="text-white font-dosis">
+          This section is still being worked on thank you.
+        </p>
+      </div>
+    </section>
+    <section id="weapons" class="relative flex w-full h-screen p-8 space-x-4">
+      <!-- Background -->
+      <img src="assets/images/weapons.png" alt="" class="z-0 object-contain" />
+      <img
+        class="absolute inset-0 object-cover"
+        src="assets/images/weapons-bg.png"
+        alt=""
+        style="z-index: -1"
+      />
+      <!-- Content -->
+      <div class="flex flex-col justify-center space-y-4">
+        <h5 class="text-4xl font-bold font-spartan text-hawkeyeYellow">
+          WEAPON
+        </h5>
+        <p class="text-white font-dosis">
+          Hawkeye's Bow and Quiver are a pair of specialized tools used by
+          former S.H.I.E.L.D. agent and Avenger, Hawkeye. Serving as his primary
+          weapons, Hawkeye carries a unique, collapsible recurve bow along with
+          a mechanized quiver that stores and deploys his trick arrows.
+        </p>
+      </div>
+    </section>
+    <section id="biography" class="w-full h-screen p-8">
+      <div
+        class="flex flex-col flex-1 p-4 space-y-4 bg-opacity-50 rounded-lg  bg-dartViolet"
+      >
+        <!-- Title -->
+        <h5 class="text-4xl font-bold text-center text-white font-spartan">
+          BIOGRAPHY
+        </h5>
+        <div class="flex flex-col items-center font-dosis">
+          <span class="text-hawkeyeYellow">HAWKEYE</span>
+          <p class="text-center text-white">
+            An expert marksman and fighter, Clint Barton puts his talents to
+            good use by working for S.H.I.E.L.D. as a special agent. The archer
+            known as Hawkeye also boasts a strong moral compass that at times
+            leads him astray from his direct orders.
+          </p>
+        </div>
+        <!-- Content -->
+        <div class="grid grid-cols-2 gap-8 text-white">
+          <div class="flex flex-col space-y-4">
+            <span> Golden Archer </span>
+            <p class="text-sm">
+              Very little is known about the S.H.I.E.L.D. agent known as Hawkeye
+              or his origins. An accomplished combatant and weapons master, he
+              was present for Thor’s arrival on Earth, and was impressed with
+              the God of Thunder. He was also instrumental in bringing over
+              Natasha Romanoff, AKA Black Widow, to the side of S.H.I.E.L.D,
+              sparing her life and offering her a path to redemption. For his
+              extraordinary abilities, he was recruited by Nick Fury to be part
+              of the Avengers Initiative. Unfortunately, in his first mission
+              with the Avengers, he initially worked against them, thanks his
+              mind being controlled by Loki, the Asgardian God of Mischief.
+              After being broken free, however, the horrified Clint did work
+              alongside his fellow Super Heroes to bring down the trickster god.
+              Since then, he has managed to put his talents to good use against
+              the Chitauri, Ultron, HYDRA, and even his fellow Avengers when it
+              seemed necessary.
+            </p>
+          </div>
+          <div class="flex flex-col space-y-4">
+            <span>Sniper Mentality </span>
+            <p class="text-sm">
+              As one of S.H.I.E.L.D.’s best agents, the World’s greatest
+              marksman, and an Avenger, Hawkeye uses traditional weapons as well
+              as high-tech ones, with a strong affinity for his archery bows.
+              Few humans on the planet compare to Clint Barton when it comes to
+              his astonishing talents in precise marksmanship, fighting, flying,
+              and tactical prowess. An expert acrobat, military-trained
+              combatant, and master assassin, Barton can stand toe-to-toe with
+              some of the best fighters around. He is also a master tactician
+              and spy—the Avengers face quite a bit of difficulty when Hawkeye
+              works for Loki and turns his plans against them. Hawkeye’s
+              specialized equipment include recurve bows, compound bows, a
+              specialized arrow quiver, speed loader, Busse dagger, a
+              S.H.I.E.L.D.-issued handgun, and collapsible baton.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="backstory" class="flex p-8 space-x-8 text-white">
+      <div
+        class="flex flex-col flex-1 p-4 space-y-4 bg-opacity-50 rounded-lg  bg-dartViolet"
+      >
+        <h5 class="text-2xl font-bold font-spartan">Backstory</h5>
+        <p class="font-dosis">
+          The man who would become known as Hawkeye was born Clint Barton.
+          Orphaned at an early age, he joined the circus and apprenticed himself
+          to the Swordsman, a performer who specialized in tricks with blades.
+          After he discovered the Swordsman stealing from the circus, the two
+          fought, and Barton was left for dead. Barton recovered, and he
+          continued his martial training with the circus’s resident archer,
+          Trickshot. Barton excelled with the bow, and he decided to use his
+          skills to embark on a career as a costumed crime fighter named
+          Hawkeye. After some initial misadventures, Hawkeye proved his worth to
+          the Avengers, and he was a regular member of that group’s rotating
+          cast throughout the 1960s. At the end of that decade, he used a growth
+          serum developed by fellow Avenger Hank Pym and became the giant-sized
+          Goliath, a role he kept for the next several years. When Barton
+          resumed his Hawkeye persona in the early 1970s, he found that his old
+          skills as an archer had not deserted him. The ensuing decade was a
+          restless one, however. It was characterized by numerous stints with
+          the Avengers and other teams, and by the early 1980s, Hawkeye was a
+          solo crime fighter. During this time, Barton fell in love with and
+          married Barbara (“Bobbi”) Morse, who was otherwise known as the
+          costumed adventurer Mockingbird. Together, the pair recruited their
+          own team, the West Coast Avengers (featuring Iron Man, Tigra, and
+          Wonder Man).
+        </p>
+      </div>
+      <div
+        class="flex flex-col flex-1 p-4 bg-opacity-50 rounded-lg bg-dartViolet"
+      >
+        <p class="font-dosis">
+          When Barton resumed his Hawkeye persona in the early 1970s, he found
+          that his old skills as an archer had not deserted him. The ensuing
+          decade was a restless one, however. It was characterized by numerous
+          stints with the Avengers and other teams, and by the early 1980s,
+          Hawkeye was a solo crime fighter. During this time, Barton fell in
+          love with and married Barbara (“Bobbi”) Morse, who was otherwise known
+          as the costumed adventurer Mockingbird. Together, the pair recruited
+          their own team, the West Coast Avengers (featuring Iron Man, Tigra,
+          and Wonder Man). After several years, the West Coast Avengers began to
+          fall apart, and Mockingbird was apparently killed by the evil demon
+          Mephisto. The rest of the group split off to form Force Works, while
+          Hawkeye, alone once more, retreated to the wilderness. Feeling the
+          need for human company, he drifted back to the Avengers before
+          assuming leadership of the Thunderbolts, a team that proved to be one
+          of Marvel’s most enduring creations of the 1990s. Although the premise
+          of villains acting on the side of the law was not wholly original—John
+          Ostrander’s Suicide Squad covered that ground a decade earlier—the
+          monthly Thunderbolts comic focused on themes of redemption that were
+          largely absent from Ostrander’s work. After a dramatic lineup change
+          in the Thunderbolts in 2003, Hawkeye returned to the Avengers, and he
+          was seemingly killed while fighting the alien Kree the
+        </p>
+      </div>
+      <div
+        class="flex flex-col flex-1 min-h-0 p-4 bg-opacity-50 rounded-lg  bg-dartViolet"
+      >
+        <p class="font-dosis">
+          following year. In typical comic fashion, Barton was eventually
+          resurrected, and he joined the New Avengers as the costumed martial
+          artist Ronin. Believing Barton to be dead, Kate Bishop, a bow-wielding
+          member of the Young Avengers, adopted the name Hawkeye, retaining it
+          even after Barton resumed his Hawkeye identity as a member of Captain
+          America’s Secret Avengers. Both Hawkeyes were featured in writer Matt
+          Fraction and artist Daniel Aja’s Hawkeye, which debuted in August
+          2012. The critically acclaimed book was a gritty street level tale
+          about crime in the city, but it was infused with humour and
+          character-driven stories that made it a novelty among monthly
+          superhero titles.
+        </p>
+      </div>
+    </section>
+
+    <!-- Insert JS -->
+    <script src="scripts/icons.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

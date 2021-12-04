@@ -1,0 +1,62 @@
+:root {
+  --welcome-o-size: 65px;
+  --ring-1-size: 200px;
+  --ring-2-size: 500px;
+  --ring-3-size: 800px;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+#welcome-o {
+  width: var(--welcome-o-size);
+  height: var(--welcome-o-size);
+  margin-top: -5px;
+}
+
+/* Navigation Items */
+.nav-item:after {
+  content: "";
+  height: 50px;
+  background: red;
+  width: 100px;
+}
+
+.circle-ring {
+  border-color: rgba(255, 255, 255, 0.3);
+  border-width: 2px;
+  z-index: -1;
+}
+
+#ring-1 {
+  width: var(--ring-1-size);
+  height: var(--ring-1-size);
+}
+
+#ring-2 {
+  width: var(--ring-2-size);
+  height: var(--ring-2-size);
+  border-width: 4px;
+}
+#ring-3 {
+  width: var(--ring-3-size);
+  height: var(--ring-3-size);
+  border-width: 8px;
+}
+
+/* Arrows */
+.arrow {
+  height: 400px;
+}
+.arrow-up {
+  right: 550px;
+  top: -50px;
+  z-index: -1;
+}
+
+.arrow-down {
+  right: 325px;
+  bottom: -50px;
+  z-index: -1;
+}

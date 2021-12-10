@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.2.2",
+    "tailwindcss": "^2.2.19"
+  }
+}
